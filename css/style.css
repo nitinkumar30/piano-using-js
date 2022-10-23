@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #fff;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    background: #000;
+    border-radius: 10px 10px 3px 3px;
+    overflow: hidden;
+}
+
+.container::before {
+    position: absolute;
+    content: '';
+    top: 25px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px gray;
+}
+
+.container::after {
+    position: absolute;
+    content: '';
+    top: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px gray;
+}
+
+.container .volume-control {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 150px;
+    height: 8px;
+    border-radius: 20px;
+    background: #313131;
+}
+
+.container .volume-control::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.container .volume-control::-webkit-slider-thumb:active {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, .4);
+}
+
+.container h1 {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.container .screen {
+    width: 50%;
+    margin: 0 auto 30px auto;
+    height: 80px;
+    background: #313131;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+
+.screen h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .keys {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    padding-bottom: 2px;
+    border-top: 1px solid #fff;
+}
+
+.container .keys button {
+    position: relative;
+    width: 60px;
+    height: 200px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 0 0 3px 3px;
+    border: none;
+    border: 1px solid gray;
+    border-top: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.container .keys button:active {
+    box-shadow: none;
+    border: none;
+}
+
+
+/* sub keys */
+
+.container .keys button:nth-child(1)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(3)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(5)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(6)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(7)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(9)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(10)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(11)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(13)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(14)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(15)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(17)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(18)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(19)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(21)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(22)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
+
+.container .keys button:nth-child(23)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -17.5px;
+    width: 35px;
+    height: 130px;
+    background: #000;
+    z-index: 2;
+}
